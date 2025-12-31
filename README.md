@@ -5,3 +5,5 @@ HAPPY NEW YEAR...... I hope things will go smooth this year... thank u saur much
 I'm always here for you babeeeeee... Imissyousaurmuch na gyudddd frfr.... hope mabasahan ni nimo.heheh Love lots!!
 Ily:)
 love,ivyyy
+
+sorry clutch kaayu ning paggama nako... kay akong ag laptop nko tuas dorm.... but anyways ENJOY Margarette! ;)
