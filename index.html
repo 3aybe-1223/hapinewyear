@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy New Year ✨</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Intro Screen -->
+  <div class="intro" id="intro">
+    <div class="intro-card">
+      <h1>Hi pretty, press me 🌸</h1>
+      <p>if you love me press the button</p>
+      <button onclick="openSurprise()">Press if u like me ✨</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content hidden" id="content">
+
+    <!-- Sparkles -->
+    <div class="sparkle" style="left:10%; animation-delay:0s;"></div>
+    <div class="sparkle" style="left:30%; animation-delay:2s;"></div>
+    <div class="sparkle" style="left:50%; animation-delay:4s;"></div>
+    <div class="sparkle" style="left:70%; animation-delay:1s;"></div>
+    <div class="sparkle" style="left:90%; animation-delay:3s;"></div>
+
+    <!-- Cute cat stickers -->
+    <div class="cat" style="left:20%; top:20%;">🐱</div>
+    <div class="cat" style="left:75%; top:30%;">🐈</div>
+    <div class="cat" style="left:75%; top:75%;">🐱</div>
+    <div class="cat" style="left:20%; top:35%;">🐈</div>
+    <div class="cat" style="left:20%; top:60%;">🐈</div>
+    <div class="cat" style="left:75%; top:45%;">🐱</div>
+    <div class="cat" style="left:20%; top:80%;">🐱</div>
+
+    <div class="card">
+      <h1>
+        Happy New Year <br>
+        Cutiee M 💖
+      </h1>
+
+      <div class="message" id="text"></div>
+      <span class="cursor"></span>
+
+      <button onclick="reveal()">Naa pa, tap me 🌸</button>
+
+      <div class="hidden-message" id="extra">
+        Enjoy your New Year with your Fam M!<br>
+        I’m really glad and lucky I got to know you,<br>
+        and I hope this year is kind to you 💜
+      </div>
+
+      <footer>
+        —wishing u da best babbyy;&gt; aybeh
+      </footer>
+    </div>
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

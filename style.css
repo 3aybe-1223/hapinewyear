@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #ffc8dd, #cdb4ff);
+  overflow: hidden;
+}
+
+/* Intro */
+.intro {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffb3e6, #bdb2ff);
+  z-index: 5;
+}
+
+.intro-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 22px;
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+}
+
+.intro h1 {
+  color: #8b4dff;
+}
+
+.intro button {
+  margin-top: 20px;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f28bff, #9a7bff);
+  color: white;
+  cursor: pointer;
+}
+
+/* Main */
+.content {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  background: rgba(255,255,255,0.95);
+  border-radius: 22px;
+  padding: 25px 20px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 80vh; /* limit height on mobile */
+  text-align: center;
+  box-shadow: 0 20px 35px rgba(0,0,0,0.15);
+  z-index: 2;
+  overflow: hidden; /* prevents overflow outside card */
+}
+
+h1 {
+  margin-top: 0;
+  color: #8b4dff;
+}
+
+.message {
+  font-size: 1.05rem;
+  color: #444;
+  min-height: 130px;
+  max-height: 180px; /* scrollable area */
+  line-height: 1.6;
+  white-space: pre-line;
+  overflow-y: auto; /* enable vertical scrolling */
+  padding-right: 6px;
+  -webkit-overflow-scrolling: touch; /* smooth scroll on iOS */
+}
+
+/* Scrollbar style (optional cute style) */
+.message::-webkit-scrollbar {
+  width: 6px;
+}
+
+.message::-webkit-scrollbar-thumb {
+  background: #c9b6ff;
+  border-radius: 3px;
+}
+
+.message::-webkit-scrollbar-track {
+  background: #f7b7ff;
+  border-radius: 3px;
+}
+
+.cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1.1em;
+  background-color: #8b4dff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,50%,100%{opacity:1}
+  25%,75%{opacity:0}
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f28bff, #9a7bff);
+  color: white;
+  cursor: pointer;
+}
+
+.hidden-message {
+  margin-top: 18px;
+  display: none;
+  color: #555;
+}
+
+/* Cats */
+.cat {
+  position: absolute;
+  font-size: 2.2rem;
+  animation: floatCat 6s ease-in-out infinite;
+  opacity: 0.9;
+}
+
+@keyframes floatCat {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+
+/* Confetti & fireworks */
+.confetti {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  animation: pop 2.5s linear forwards;
+}
+
+@keyframes pop {
+  to {
+    transform: translate(var(--x), var(--y)) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 400px) {
+  h1 { font-size: 1.3rem; }
+  .message { font-size: 1rem; max-height: 150px; }
+  button { padding: 8px 16px; font-size: 0.95rem; }
+}
